@@ -1,0 +1,800 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  12 NOV 2022 12:18
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/nathg/Documents/GitHub/ExamStylo/example_simple.tex
+(c:/Users/nathg/Documents/GitHub/ExamStylo/example_simple.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-10-26> (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen138
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen139
+) (examstylo.sty
+
+examstylo.sty:1: LaTeX Error: Two \documentclass or \documentstyle commands.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \documentclass[a4paper,14pt]{
+                                 extarticle}
+The document may only declare one class.
+
+examstylo.sty:44: Undefined control sequence.
+l.44 \UsePointsFromSubQuestions
+                                % < This
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:48: Undefined control sequence.
+l.48 \MakeTheSimpleTitlePage
+                             % < This
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:55: Undefined control sequence.
+l.55 \UseArialFont
+                   % < This
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:59: Undefined control sequence.
+l.59 \SetFooterOptions
+                      [% Set options for the footer
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+examstylo.sty:59: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \SetFooterOptions[
+                       % Set options for the footer
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+examstylo.sty:66: Undefined control sequence.
+l.66 \SetExerciseOptions
+                        [% Set options for exercises
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+examstylo.sty:66: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \SetExerciseOptions[
+                         % Set options for exercises
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+examstylo.sty:70: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.70   ]
+        {}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (127.65486pt too wide) in paragraph at lines 66--71
+[]\OT1/cmr/m/n/14.4 [PutExerciseOnNewPage=Fale,PutFirstExerciseOnNewPage=False,firstexercisevskip=] 
+ []
+
+examstylo.sty:73: Undefined control sequence.
+l.73 \SetWorksheetOptions
+                         [% Set options for exercises
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+examstylo.sty:73: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \SetWorksheetOptions[
+                          % Set options for exercises
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+examstylo.sty:78: Undefined control sequence.
+l.78 \SetSimpleTitleOptions
+                           [% Set options for exercises
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+examstylo.sty:78: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \SetSimpleTitleOptions[
+                            % Set options for exercises
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count193
+\l__pdf_internal_box=\box51
+)
+No file example_simple.aux.
+\openout1 = `example_simple.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+examstylo.sty:89: Undefined control sequence.
+l.89 \extratitletext
+                    {{\Large Versie A}} % extra concise info e.g, {\Large Ve...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:95: Undefined control sequence.
+l.95 \noteforthelastpage
+                        {% Put text here to have a note on the last page
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:101: Undefined control sequence.
+l.101 \titlepagetext
+                    {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:105: Undefined control sequence.
+l.105 Dit examen bestaat uit \totqstns
+                                      \ vragen.\par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:106: Undefined control sequence.
+l.106 Voor dit examen zijn maximaal \totpts
+                                           \ punten te behalen.\par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:111: Undefined control sequence.
+l.111 \simpletitletext
+                      {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:114: Undefined control sequence.
+<argument> Deze toets bestaat uit \totqstns 
+                                            \ vragen (\totpts \ punten).\\ V...
+l.114   }
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:114: Undefined control sequence.
+<argument> ...aat uit \totqstns \ vragen (\totpts 
+                                                  \ punten).\\ Veel succes e...
+l.114   }
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+examstylo.sty:128: Undefined control sequence.
+<argument> \undefinedpagestyle 
+                               
+l.128 \pagestyle{mainpagestyle}
+                                % Apply the main style
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:131: Undefined control sequence.
+l.131 \formulapagetext
+                      {% Put text here for the formula page(s)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:142: Undefined control sequence.
+l.142 \makeatletter\ifOptExc@firstexconnewpage
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:143: Undefined control sequence.
+l.143   \setmainpagegeometry
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:158: Undefined control sequence.
+l.158 \newquestion
+                  [3]{\label{q:vraagX}quis nostrud exercitation ullamco labo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:159: Undefined control sequence.
+l.159 \newsubquestion
+                     [2]{No sabía, de tristezas, ni de lágrimas, Ni nada, ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:160: Undefined control sequence.
+l.160 \newsubquestion
+                     [2]{Yo sabía de cariño, de ternura. Porque a mí desd...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:161: Undefined control sequence.
+l.161 \newsubquestion
+                     [2]{eso me enseño mamá Eso y muchas cosas más.}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:162: Undefined control sequence.
+l.162 \newsubquestion
+                     [2]{Yo jamás sufrí, yo jamás lloré. Yo era muy feli...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--163
+
+ []
+
+examstylo.sty:164: Undefined control sequence.
+l.164 \showpoints
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:165: Undefined control sequence.
+l.165 \newquestion
+                  [3]{\label{q:vraagXX}quis nostrud exercitation ullamco lab...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `q:vraagXXX' on page 1 undefined on input line 165.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+examstylo.sty:168: Undefined control sequence.
+l.168 \newquestion
+                  [3]{\label{q:vraagXXX}quis nostrud exercitation ullamco la...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:168: Undefined control sequence.
+<argument> -\lineheight 
+                        
+l.168 ... commodo consequat.}\vspace{-\lineheight}
+                                                  %\vspace{-0.83333\baseline...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:168: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.168 ... commodo consequat.}\vspace{-\lineheight}
+                                                  %\vspace{-0.83333\baseline...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+examstylo.sty:168: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.168 ... commodo consequat.}\vspace{-\lineheight}
+                                                  %\vspace{-0.83333\baseline...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+examstylo.sty:169: LaTeX Error: Environment multicols undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{multicols}
+                       {2}%
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+examstylo.sty:170: Undefined control sequence.
+l.170 \newsubquestion
+                     [2]{$y=x^2-3$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 170.
+examstylo.sty:171: Undefined control sequence.
+l.171 \newsubquestion
+                     [2]{$L=4\pi R^2 \sigma T^4$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:173: Undefined control sequence.
+l.173 \newsubquestion
+                     [2]{\label{sq:subq}Yo jamás sufrí, yo jamás lloré. ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:174: Undefined control sequence.
+l.174 \columnbreak
+                  % Notice the columnbreak
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:175: Undefined control sequence.
+l.175 \newsubquestion
+                     [2]{$y=x^2-3$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:176: Undefined control sequence.
+l.176 \newsubquestion
+                     [2]{$y=x^2-3$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:177: Undefined control sequence.
+l.177 \newsubquestion
+                     [2]{$y=x^2-3$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+examstylo.sty:178: LaTeX Error: \begin{document} ended by \end{multicols}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \end{multicols}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+examstylo.sty:183: Undefined control sequence.
+l.183 \lastpageofthetest
+                        \
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:187: Undefined control sequence.
+l.187 \worksheetcontent
+                       { % Put content here for the worksheets
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:189: Undefined control sequence.
+l.189 \refquestion
+                  {q:vraag}\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:190: Undefined control sequence.
+l.190 \includegraphics
+                      [width=0.8\textwidth]{random_graph.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:190: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.190 \includegraphics[width=0.8\textwidth]
+                                           {random_graph.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+examstylo.sty:190: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.190 \includegraphics[width=0.8\textwidth]
+                                           {random_graph.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+examstylo.sty:190: Missing $ inserted.
+<inserted text> 
+                $
+l.190 ...ludegraphics[width=0.8\textwidth]{random_
+                                                  graph.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+examstylo.sty:190: Extra }, or forgotten $.
+l.190 ...cs[width=0.8\textwidth]{random_graph.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+examstylo.sty:191: Missing $ inserted.
+<inserted text> 
+                $
+l.191 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+examstylo.sty:194: Undefined control sequence.
+l.194 \refquestion
+                  {q:vraagvier}\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:195: Undefined control sequence.
+l.195 \includegraphics
+                      [width=0.8\textwidth]{random_graph.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:195: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.195 \includegraphics[width=0.8\textwidth]
+                                           {random_graph.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+examstylo.sty:195: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.195 \includegraphics[width=0.8\textwidth]
+                                           {random_graph.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+examstylo.sty:195: Missing $ inserted.
+<inserted text> 
+                $
+l.195 ...ludegraphics[width=0.8\textwidth]{random_
+                                                  graph.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+examstylo.sty:195: Extra }, or forgotten $.
+l.195 ...cs[width=0.8\textwidth]{random_graph.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+examstylo.sty:196: Missing $ inserted.
+<inserted text> 
+                $
+l.196 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (7.04991pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/14.4 1 
+ []
+
+[1
+
+{C:/Users/nathg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+examstylo.sty:199: Undefined control sequence.
+l.199 \refquestion
+                  {q:vraagvijf} en \refquestion{q:vraagzes}\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:199: Undefined control sequence.
+l.199 \refquestion{q:vraagvijf} en \refquestion
+                                               {q:vraagzes}\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:200: Undefined control sequence.
+l.200 \includegraphics
+                      [angle=90,width=0.8\textwidth]{random_graph.png} % Sid...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+examstylo.sty:200: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.200 ...udegraphics[angle=90,width=0.8\textwidth]
+                                                  {random_graph.png} % Siden...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+examstylo.sty:200: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.200 ...udegraphics[angle=90,width=0.8\textwidth]
+                                                  {random_graph.png} % Siden...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+examstylo.sty:200: Missing $ inserted.
+<inserted text> 
+                $
+l.200 ...ics[angle=90,width=0.8\textwidth]{random_
+                                                  graph.png} % Sidenote: The...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+examstylo.sty:200: Extra }, or forgotten $.
+l.200 ...90,width=0.8\textwidth]{random_graph.png}
+                                                   % Sidenote: The rotating ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+examstylo.sty:201: Missing $ inserted.
+<inserted text> 
+                $
+l.201 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (7.04991pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/14.4 2 
+ []
+
+[2]
+
+examstylo.sty:211: LaTeX hooks Error: Missing \PopDefaultHookLabel.
+(hooks)              The label 'examstylo' was pushed but never popped.
+(hooks)              Something is wrong.
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.211 \end{document}
+                    
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+(example_simple.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) )
+(\end occurred inside a group at level 3)
+
+### simple group (level 3) entered at line 195 ({)
+### simple group (level 2) entered at line 190 ({)
+### simple group (level 1) entered at line 187 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 504 strings out of 475380
+ 11821 string characters out of 2776771
+ 353970 words of memory out of 3000000
+ 21958 multiletter control sequences out of 15000+600000
+ 471576 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 48i,5n,54p,274b,143s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on example_simple.pdf (2 pages, 90895 bytes).
+PDF statistics:
+ 49 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
