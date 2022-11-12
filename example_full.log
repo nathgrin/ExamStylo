@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  12 NOV 2022 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  12 NOV 2022 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/nathg/Documents/GitHub/ExamStylo/example_simple.tex
-(c:/Users/nathg/Documents/GitHub/ExamStylo/example_simple.tex
+**c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex
+(c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-10-26> (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\size14.clo
-File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
@@ -620,34 +620,34 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 )
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 84.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 88.
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count336
 \l__pdf_internal_box=\box123
-) (example_simple.aux)
-\openout1 = `example_simple.aux'.
+) (example_full.aux)
+\openout1 = `example_full.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count337
@@ -667,10 +667,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 84.
- (example_simple.out) (example_simple.out)
+Package hyperref Info: Link coloring OFF on input line 88.
+ (example_full.out) (example_full.out)
 \@outlinefile=\write4
-\openout4 = `example_simple.out'.
+\openout4 = `example_full.out'.
 
 
 *geometry* driver: auto-detecting
@@ -689,15 +689,15 @@ Package hyperref Info: Link coloring OFF on input line 84.
 * \textheight=591.5302pt
 * \oddsidemargin=17.3571pt
 * \evensidemargin=17.3571pt
-* \topmargin=-9.86334pt
-* \headheight=14.0pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=14.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=15.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
-* \columnsep=7.04991pt
-* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \columnsep=5.87494pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -721,15 +721,15 @@ Package hyperref Info: Link coloring OFF on input line 84.
 * \textheight=699.93796pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-62.9004pt
-* \headheight=14.0pt
+* \topmargin=-60.9004pt
+* \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=14.0pt
+* \topskip=12.0pt
 * \footskip=34.14322pt
 * \marginparwidth=0.0pt
 * \marginparsep=0.0pt
-* \columnsep=7.04991pt
-* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \columnsep=5.87494pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -739,6 +739,28 @@ Package hyperref Info: Link coloring OFF on input line 84.
 * \@reversemargintrue
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+
+ []
+
+[1
+
+
+{C:/Users/nathg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 159.
+ (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 159.
+ (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -753,15 +775,15 @@ Package hyperref Info: Link coloring OFF on input line 84.
 * \textheight=699.93796pt
 * \oddsidemargin=33.00511pt
 * \evensidemargin=33.00511pt
-* \topmargin=-62.9004pt
-* \headheight=14.0pt
+* \topmargin=-60.9004pt
+* \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=14.0pt
+* \topskip=12.0pt
 * \footskip=34.14322pt
 * \marginparwidth=31.2982pt
 * \marginparsep=17.07182pt
-* \columnsep=7.04991pt
-* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \columnsep=5.87494pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -771,89 +793,216 @@ Package hyperref Info: Link coloring OFF on input line 84.
 * \@reversemargintrue
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 123.
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 158.
-Package marginnote Info: right page because not two side mode on input line 158.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 158.
+Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 182.
+Package marginnote Info: right page because not two side mode on input line 182.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 182.
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
-
- []
-
-Package marginnote Info: Margin note 1.2 is on absolute page 1 on input line 165.
-Package marginnote Info: right page because not two side mode on input line 165.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 165.
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-Package marginnote Info: Margin note 1.3 is on absolute page 1 on input line 168.
-Package marginnote Info: right page because not two side mode on input line 168.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 168.
+<random_graph.png, id=29, 451.6875pt x 301.125pt>
+File: random_graph.png Graphic file (type png)
+<use random_graph.png>
+Package pdftex.def Info: random_graph.png  used on input line 186.
+(pdftex.def)             Requested size: 261.19899pt x 174.1426pt.
 
-Overfull \hbox (221.18858pt too wide) in paragraph at lines 170--170
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+Package marginnote Info: Margin note 3.2 is on absolute page 3 on input line 190.
+Package marginnote Info: right page because not two side mode on input line 190.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 190.
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+[3
+
+ <./random_graph.png>] [4] [5]
+Package marginnote Info: Margin note 6.1 is on absolute page 6 on input line 211.
+Package marginnote Info: right page because not two side mode on input line 211.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 211.
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+Package marginnote Info: Margin note 6.2 is on absolute page 6 on input line 213.
+Package marginnote Info: right page because not two side mode on input line 213.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 213.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+Package marginnote Info: Margin note 6.3 is on absolute page 6 on input line 215.
+Package marginnote Info: right page because not two side mode on input line 215.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 215.
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+
+ []
+
+Package marginnote Info: Margin note 6.4 is on absolute page 6 on input line 223.
+Package marginnote Info: right page because not two side mode on input line 223.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 223.
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+
+ []
+
+Package marginnote Info: Margin note 6.5 is on absolute page 6 on input line 234.
+Package marginnote Info: right page because not two side mode on input line 234.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 234.
+[6]
+Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 249.
+Package marginnote Info: right page because not two side mode on input line 249.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 249.
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+Package marginnote Info: Margin note 7.2 is on absolute page 7 on input line 267.
+Package marginnote Info: right page because not two side mode on input line 267.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 267.
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+Package marginnote Info: Margin note 7.3 is on absolute page 7 on input line 271.
+Package marginnote Info: right page because not two side mode on input line 271.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 271.
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+Package marginnote Info: Margin note 7.4 is on absolute page 7 on input line 273.
+Package marginnote Info: right page because not two side mode on input line 273.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 273.
+[7]
+Package marginnote Info: Margin note 8.1 is on absolute page 8 on input line 279.
+Package marginnote Info: right page because not two side mode on input line 279.
+Package marginnote Info: xpos seems to be 105.2751pt on input line 279.
+
+Overfull \hbox (220.60109pt too wide) in paragraph at lines 281--281
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 170.
-(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 170.
- (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (221.18858pt too wide) in paragraph at lines 171--171
+
+Overfull \hbox (220.60109pt too wide) in paragraph at lines 282--282
 [][] 
  []
 
 
-Overfull \hbox (221.18858pt too wide) in paragraph at lines 173--173
+Overfull \hbox (220.60109pt too wide) in paragraph at lines 283--283
 [][] 
  []
 
 
-Overfull \hbox (221.18858pt too wide) in paragraph at lines 175--175
+Overfull \hbox (220.60109pt too wide) in paragraph at lines 285--285
 [][] 
  []
 
 
-Overfull \hbox (221.18858pt too wide) in paragraph at lines 176--176
+Overfull \hbox (220.60109pt too wide) in paragraph at lines 286--286
 [][] 
  []
 
 
-Overfull \hbox (221.18858pt too wide) in paragraph at lines 177--177
+Overfull \hbox (220.60109pt too wide) in paragraph at lines 287--287
 [][] 
  []
 
-[1
+[8]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
+* v-part:(T,H,B)=(48.36958pt, 699.93796pt, 96.7393pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69684pt
+* \textheight=699.93796pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-60.9004pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=34.14322pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=5.87494pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemargintrue
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+File: random_graph.png Graphic file (type png)
+<use random_graph.png>
+Package pdftex.def Info: random_graph.png  used on input line 319.
+(pdftex.def)             Requested size: 386.95894pt x 257.98834pt.
+File: random_graph.png Graphic file (type png)
+<use random_graph.png>
+Package pdftex.def Info: random_graph.png  used on input line 319.
+(pdftex.def)             Requested size: 386.95894pt x 257.98834pt.
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.319   \makeworksheets
+                        [1
 
-{C:/Users/nathg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (example_simple.aux)
-Package rerunfilecheck Info: File `example_simple.out' has not changed.
+]
+File: random_graph.png Graphic file (type png)
+<use random_graph.png>
+Package pdftex.def Info: random_graph.png  used on input line 319.
+(pdftex.def)             Requested size: 451.68639pt x 301.12425pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.324 \end{document}
+                     [2] (example_full.aux)
+Package rerunfilecheck Info: File `example_full.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23333 strings out of 475380
- 436986 string characters out of 2776771
- 787638 words of memory out of 3000000
- 44300 multiletter control sequences out of 15000+600000
- 485657 words of font info for 61 fonts, out of 8000000 for 9000
+ 23498 strings out of 475380
+ 439172 string characters out of 2776771
+ 781351 words of memory out of 3000000
+ 44411 multiletter control sequences out of 15000+600000
+ 504123 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,12n,103p,495b,465s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on example_simple.pdf (1 page, 76931 bytes).
+ 98i,13n,103p,493b,468s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on example_full.pdf (10 pages, 156450 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
