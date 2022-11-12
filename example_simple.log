@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  12 NOV 2022 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  12 NOV 2022 19:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -843,10 +843,10 @@ Package rerunfilecheck Info: File `example_simple.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23333 strings out of 475380
- 436986 string characters out of 2776771
- 787638 words of memory out of 3000000
- 44300 multiletter control sequences out of 15000+600000
+ 23343 strings out of 475380
+ 437231 string characters out of 2776771
+ 787636 words of memory out of 3000000
+ 44310 multiletter control sequences out of 15000+600000
  485657 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,103p,495b,465s stack positions out of 10000i,1000n,20000p,200000b,80000s

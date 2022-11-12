@@ -121,16 +121,21 @@
 % Some options
 \def\istrue{True}
 
-\newcommand{\UsePointsFromQuestions}{\def\usepointsquestions{Yes}}
-\newcommand{\UsePointsFromSubQuestions}{\def\usepointssubquestions{Yes}}
+\newif\ifusepointsquestions
+\newif\ifusepointssubquestions
+\newcommand{\UsePointsFromQuestions}{\usepointsquestionstrue}
+\newcommand{\UsePointsFromSubQuestions}{\usepointssubquestionstrue}
 
-\newcommand{\MakeTheWorksheetPages}{\def\makeworksheetpages{Yes}}
-\newcommand{\ShowTitleOnTheWorksheet}{\def\showtitleonworksheet{Yes}}
+\newif\ifmakeworksheetpages
+\newcommand{\MakeTheWorksheetPages}{\makeworksheetpagestrue}
 
-\newcommand{\MakeTheFullTitlePage}{\def\makefulltitlepage{Yes}}
-\newcommand{\MakeTheSimpleTitlePage}{\def\makesimpletitlepage{Yes}}
+\newif\ifmakefulltitlepage
+\newif\ifmakesimpletitlepage
+\newcommand{\MakeTheFullTitlePage}{\makefulltitlepagetrue}
+\newcommand{\MakeTheSimpleTitlePage}{\makesimpletitlepagetrue}
 
-\newcommand{\MakeTheFormulaPage}{\def\maketheformulapage{Yes}}
+\newif\ifmaketheformulapage
+\newcommand{\MakeTheFormulaPage}{\maketheformulapagetrue}
 
 \newcommand{\UseArialFont}{
 \usepackage{helvet}% Secretly this is Helvetica
@@ -227,7 +232,7 @@
 \newcommand{\pts}[1]{{\footnotesize #1p}}
 
 % subquestions
-%\def\subqmarginwidth{\ifdefined\usepointssubquestions2.5em\else1.25em\fi} % subquestion margin
+%\def\subqmarginwidth{\ifusepointssubquestions2.5em\else1.25em\fi} % subquestion margin
 %\setlength{\columnsep}{0.5em} % for paracol as well as multicol package..
 
 % Fix lineheight thing (is fake)
@@ -429,23 +434,23 @@
 
 \newcommand{\newquestion}[2][]{% Those convoluted ifstatements are: IF (pionts at subquestion and  asked for exception: DO) or (point ant question: DO)
 \refstepcounter{question}
-\ifdefined\usepointssubquestions\ifdoshowpoints\addtocounter{totpoints}{#1}\fi\else\ifdefined\usepointsquestions\addtocounter{totpoints}{#1}\fi\fi% Add points if asked
-\marginnote{\ifstrempty{#1}{}{\ifdefined\usepointssubquestions\ifdoshowpoints\pts{#1}\fi\else\ifdefined\usepointsquestions\pts{#1}\fi\fi}\hfill\exc{\thequestion}}[0cm]#2%
+\ifusepointssubquestions\ifdoshowpoints\addtocounter{totpoints}{#1}\fi\else\ifusepointsquestions\addtocounter{totpoints}{#1}\fi\fi% Add points if asked
+\marginnote{\ifstrempty{#1}{}{\ifusepointssubquestions\ifdoshowpoints\pts{#1}\fi\else\ifusepointsquestions\pts{#1}\fi\fi}\hfill\exc{\thequestion}}[0cm]#2%
 \ifdoshowpoints\showpoints\fi%retoggle the toggle
 }
 
-%\def\subqmarginwidth{\ifdefined\usepointssubquestions2.5em\else1.25em\fi} % subquestion margin
-\def\subqmarginwidth{\ifdefined\usepointssubquestions2.25em\else1em\fi} % subquestion margin
+%\def\subqmarginwidth{\ifusepointssubquestions2.5em\else1.25em\fi} % subquestion margin
+\def\subqmarginwidth{\ifusepointssubquestions2.25em\else1em\fi} % subquestion margin
 \setlength{\columnsep}{0.5em} % for paracol as well as multicol package..
 
 \newcommand{\newsubquestion}[2][]{%
 \setcolumnwidth{\subqmarginwidth,\fill}%,\dimexpr\textwidth-\subqmarginwidth\relax}[0,0]%\columnratio{0.08}%
 \refstepcounter{subquestion}
-\ifdefined\usepointssubquestions\addtocounter{totpoints}{#1}\fi
+\ifusepointssubquestions\addtocounter{totpoints}{#1}\fi
 \begin{paracol}{2}
-%\ifstrempty{#1}{}{\ifdefined\usepointssubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}%
+%\ifstrempty{#1}{}{\ifusepointssubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}%
 \parbox[t]{\dimexpr\subqmarginwidth\relax}{%
-\ifstrempty{#1}{}{\ifdefined\usepointssubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}}%
+\ifstrempty{#1}{}{\ifusepointssubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}}%
 \switchcolumn%
 #2%
 \end{paracol}%

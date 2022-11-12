@@ -125,10 +125,10 @@ Veel succes en plezier!\\
 
 
 % Make title pages if instructed to
-\ifdefined\makefulltitlepage
+\ifmakefulltitlepage
   \maketitlepage % inserts a \newpage
 \else
-  \ifdefined\makesimpletitlepage
+  \ifmakesimpletitlepage
     \makesimpletitleonfirstpage % does not insert a \newpage
   \fi
 \fi
@@ -155,7 +155,7 @@ kettingregel & $k(x) = f(g(x))$ & $k'(x) = f'(g(x))\cdot g'(x)$ of  $\deriv{k}{x
 } % End of formula page text
 
 % Make the formula page if instructed to
-\ifdefined\maketheformulapage
+\ifmaketheformulapage
   \makeformulapage
 \fi
 
@@ -315,7 +315,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 } % End worksheet content
 
 % Make the worksheet pages if instructed to
-\ifdefined\makeworksheetpages
+\ifmakeworksheetpages
   \makeworksheets
 \fi
 

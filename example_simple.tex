@@ -116,10 +116,10 @@ Veel succes en plezier!\\
 
 
 % Make title pages if instructed to
-\ifdefined\makefulltitlepage
+\ifmakefulltitlepage
   \maketitlepage % inserts a \newpage
 \else
-  \ifdefined\makesimpletitlepage
+  \ifmakesimpletitlepage
     \makesimpletitleonfirstpage % does not insert a \newpage
   \fi
 \fi
@@ -134,7 +134,7 @@ Veel succes en plezier!\\
 } % End of formula page text
 
 % Make the formula page if instructed to
-\ifdefined\maketheformulapage
+\ifmaketheformulapage
   \makeformulapage
 \fi
 
@@ -202,7 +202,7 @@ Veel succes en plezier!\\
 } % End worksheet content
 
 % Make the worksheet pages if instructed to
-\ifdefined\makeworksheetpages
+\ifmakeworksheetpages
   \makeworksheets
 \fi
 
