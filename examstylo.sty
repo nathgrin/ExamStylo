@@ -157,18 +157,22 @@
 \newcommand{\SetFooterOptions}[2][]{%
   \setkeys{footeropt}{#1}% Set new keys
 }
+
 %% Exercise options
 \newif\ifOptExc@excnewpage
 \newif\ifOptExc@firstexconnewpage
+\newif\ifOptExc@excResetquest
 \newlength{\firstexercisevskip}\setlength{\firstexercisevskip}{1\baselineskip}
 
 \define@key{excopt}{PutExerciseOnNewPage}{\def\tmp{#1}\ifx\tmp\istrue\OptExc@excnewpagetrue\else\OptExc@excnewpagefalse\fi}
 \define@key{excopt}{PutFirstExerciseOnNewPage}{\def\tmp{#1}\ifx\tmp\istrue\OptExc@firstexconnewpagetrue\else\OptExc@firstexconnewpagefalse\fi}
 \define@key{excopt}{firstexercisevskip}{\setlength{\firstexercisevskip}{#1}}
-\setkeys{excopt}{PutExerciseOnNewPage=True,PutFirstExerciseOnNewPage=True,firstexercisevskip=\baselineskip}% defaults
+\define@key{excopt}{ExerciseResetQuestionCount}{\def\tmp{#1}\ifx\tmp\istrue\OptExc@excResetquesttrue\else\OptExc@excResetquestfalse\fi}
+\setkeys{excopt}{PutExerciseOnNewPage=True,PutFirstExerciseOnNewPage=True,firstexercisevskip=\baselineskip,ExerciseResetQuestionCount=False}% defaults
 \newcommand{\SetExerciseOptions}[2][]{%
   \setkeys{excopt}{#1}% Set new keys
 }
+
 %% Worksheet options
 \newif\ifOptWorksh@showtitle
 
@@ -421,11 +425,14 @@
 \WFfill\WFclear\FloatBarrier
 %\ifdefined\OptExc@excnewpage\newpage\else\vspace{3\baselineskip}\fi % new page if wanted
 \ifnum\ifnum\value{exercise}=1 \ifOptExc@firstexconnewpage 1\else 0\fi \else\ifOptExc@excnewpage 1\else 0\fi\fi
-   =1 %
-   \newpage
- \else
-   \vspace{\firstexercisevskip}
- \fi
+  =1 %
+  \newpage
+\else
+  \vspace{\firstexercisevskip}
+\fi
+\ifOptExc@excResetquest%Reset question counter if wanted
+  \setcounter{question}{0}
+\fi
 \hspace*{\dimexpr-0.5cm-1em\relax}{\large\bf #1 }\vspace{-0.5\baselineskip}
 \newline \hspace*{-1.7cm}\excrulecolor{\rule{\dimexpr\textwidth+1.7cm\relax}{1.5mm}}
 \newline
