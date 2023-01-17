@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  17 JAN 2023 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  17 JAN 2023 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,11 +863,6 @@ Package marginnote Info: Margin note 6.5 is on absolute page 6 on input line 233
 Package marginnote Info: right page because not two side mode on input line 233.
 Package marginnote Info: xpos seems to be 105.2751pt on input line 233.
 [6]
-pdfTeX warning (ext4): destination with the same identifier (name{question.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.248 ...gdrie}question question question\newline}
-                                                  
 Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 248.
 Package marginnote Info: right page because not two side mode on input line 248.
 Package marginnote Info: xpos seems to be 105.2751pt on input line 248.
@@ -881,12 +876,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{question.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.266 ...gvier}question question question\newline}
-                                                  
 Package marginnote Info: Margin note 7.2 is on absolute page 7 on input line 266.
 Package marginnote Info: right page because not two side mode on input line 266.
 Package marginnote Info: xpos seems to be 105.2751pt on input line 266.
@@ -895,12 +884,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{question.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.270 ...gvijf}question question question\newline}
-                                                  
 Package marginnote Info: Margin note 7.3 is on absolute page 7 on input line 270.
 Package marginnote Info: right page because not two side mode on input line 270.
 Package marginnote Info: xpos seems to be 105.2751pt on input line 270.
@@ -909,60 +892,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{question.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.272 ...stion question question question\newline}
-                                                    \label{q:vraagzes}
 Package marginnote Info: Margin note 7.4 is on absolute page 7 on input line 272.
 Package marginnote Info: right page because not two side mode on input line 272.
 Package marginnote Info: xpos seems to be 105.2751pt on input line 272.
- [7]
-pdfTeX warning (ext4): destination with the same identifier (name{question.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.278 ...commodo consequat. ea commodo consequat.}
-                                                  \vspace{-\lineheight}%\vsp...
+[7]
 Package marginnote Info: Margin note 8.1 is on absolute page 8 on input line 278.
 Package marginnote Info: right page because not two side mode on input line 278.
 Package marginnote Info: xpos seems to be 105.2751pt on input line 278.
 
-pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.280 ...question[2]{$y=x^2-3$ \label{sq:example}}
-                                                  
 Overfull \hbox (220.60109pt too wide) in paragraph at lines 280--280
 [][] 
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.281 \newsubquestion[2]{$L=4\pi R^2 \sigma T^4$}
-                                                 
 Overfull \hbox (220.60109pt too wide) in paragraph at lines 281--281
 [][] 
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.282 ...é. Yo era muy feliz, yo vivía muy bien}
-                                                  
 Overfull \hbox (220.60109pt too wide) in paragraph at lines 282--282
 [][] 
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.284 \newsubquestion[2]{$y=x^2-3$}
-                                   
 Overfull \hbox (220.60109pt too wide) in paragraph at lines 284--284
 [][] 
  []
@@ -1040,17 +992,17 @@ Package rerunfilecheck Info: File `example_full.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23503 strings out of 475380
- 439405 string characters out of 2776771
- 781363 words of memory out of 3000000
+ 23512 strings out of 475380
+ 439524 string characters out of 2776771
+ 781376 words of memory out of 3000000
  44425 multiletter control sequences out of 15000+600000
  504123 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,103p,493b,468s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on example_full.pdf (10 pages, 154509 bytes).
+Output written on example_full.pdf (10 pages, 156450 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
