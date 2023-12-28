@@ -8,7 +8,7 @@
 %%% Provides the following:
 %% For typesetting
 % \mrm{} % shorthand mathrm
-% \thus % Implication symbol
+% \thus % Implication symbol (=>)
 % \sm % small minus (for \sm2 - 2 = \sm 4)
 % \meuro % neat euro sign
 % \deg % degree
@@ -19,16 +19,20 @@
 % \intextbullet % Make a bulletpoint
 % \lognl[base] % make a logarithm base base
 % \deriv{y}{x} % make total derivative dy/dx
+% \Xbar % Bar over X
+% \hateq % = with ^ on top (for equivalent)
+% \ut{} % for unit (is \,\mrm{#1})
+% \eulere
+% \cancel and \cancelto from the cancel package
 %
 %% For control
-% \comment{} % comment everything inside
-% \insertemptypage % Insert an empty page
-% \begin{multicols}{2} <subquestions here> \end{multicols} % For two-column subquestions
+% \comment{} comment everything inside
 %
 %% And some colors
 % \red{}
 % \blue{}
 % \orange{} % Like in Kern
+% \royalpurple{} % Stolen from Wim, used in \answer
 
 %%% Some notes:
 % \newsubquestion{}{} works with package paracol to make two columns. if you want a newline after the subquestion, put the \newline INSIDE the question txt (i.e., {example text\newline}) 
@@ -39,21 +43,7 @@
 
 
 
-
 %%%%% %%%%% Options!
-%% Uncomment this to use points from Questions (ignored if use points from subquestions)
-\UsePointsFromQuestions % < This
-%% Uncomment this to use points from SUBquestions
-%\UsePointsFromSubQuestions % < This
-%% Uncomment this to make a full title page
-\MakeTheFullTitlePage % < This
-%% Uncomment this to make a simple title on the first page (ignored if make full titlepage)
-%\MakeTheSimpleTitlePage % < This
-%% Uncomment this to make the formula page
-\MakeTheFormulaPage % < This
-%% Uncomment this to make the worksheets
-\MakeTheWorksheetPages % < This
-
 %% Uncomment this to use Arial (Ugly!)
 \UseArialFont % < This
 
@@ -67,24 +57,41 @@
 
 %% Exercise options
 \SetExerciseOptions[% Set options for exercises
-  PutExerciseOnNewPage=True,%=True to show every (except first) exercise on a new page
-  PutFirstExerciseOnNewPage=True,%=True to have the first exercise on a new page
+  PutExerciseOnNewPage=False,%=True to show every (except first) exercise on a new page
+  PutFirstExerciseOnNewPage=False,%=True to have the first exercise on a new page
   firstexercisevskip=\baselineskip,%=\baselineskip if first exercise not on new page, how much vspace before?
-  ExerciseResetQuestionCount=False,%=False, at new exercise, reset the question counter?
+  QuestionStartingNumber=1,%=1 Start at question number #
   ]{}
 
+%% Pages options
+\SetPagesOptions[% Set options for the pages
+  TitlePage=Full,%=Simple [Make Simple Title], =Full [Make full title page], =False [No title]
+  FormulaPage=True,%=False [No],=True [Yes]
+  WorksheetPages=True,%=False [No],=True [Yes]
+  ]{}
+  
 %% Worksheet options
-\SetWorksheetOptions[% Set options for exercises
-  ShowTitle=True,%=True to show the title on the first page of the worksheets
+\SetWorksheetOptions[% Set options for worksheet
+  ShowTitle=False,%=True to show the title on the first page of the worksheets
   ]{}
   
 %% Simple titlepage options
-\SetSimpleTitleOptions[% Set options for exercises
-  thestyle=Default,%=Default [Attempts to look like full titlepage, but small], =Exerciselike [Looks more like the exercise seperator]
+\SetSimpleTitleOptions[% Set options for simple title
+  theStyle=Default,%=Default [Attempts to look like full titlepage, but small], =Exerciselike [Looks more like the exercise seperator]
   ]{}
-  
-%%%%% %%%%% BEGIN document
-\begin{document}
+
+%% Point options
+\SetPointOptions[% Set options for points
+  which=questions,%=questions [Use points from questions], =subquestions [Use points from subquestions], =False/None [No points]
+  ]{}
+
+%% Answer options
+\SetAnswerOptions[% Set options for answers
+  ShowAnswers=False,%=True [Show answers? global toggle]
+  ShowAnswersInline=True,%=True [If show answers, show inline?]
+  ShowAnswersAtEnd=False,%=True [If show answers, show at end?] % Currently doesnt work
+  ]{}
+
 
 %%%%% Title Page Settings
 \title{Test for a test}
@@ -101,42 +108,33 @@
 %%% Put text for the title page Here
 % Use \totqstns and \totpts to reference total questions and total points resp.
 \titlepagetext{
-Bij dit examen hoort een uitwerkbijlage. 
+  Bij dit examen hoort een uitwerkbijlage. 
 
-\vfill
-Dit examen bestaat uit \totqstns\ vragen.\par
-Voor dit examen zijn maximaal \totpts\ punten te behalen.\par
-Voor elk vraagnummer staat hoeveel punten met een goed antwoord behaald
-kunnen worden.\\
-
-Als bij een vraag een verklaring, uitleg of berekening vereist is, worden aan het antwoord meestal geen punten toegekend als deze verklaring, uitleg of berekening ontbreekt.\\
- 
-Geef niet meer antwoorden (redenen, voorbeelden e.d.) dan er worden gevraagd. Als er bijvoorbeeld twee redenen worden gevraagd en je geeft meer dan twee redenen, dan worden alleen de eerste twee in de beoordeling meegeteld.
+  \vfill
+  Dit examen bestaat uit \totqstns\ vragen.\par
+  Voor dit examen zijn maximaal \totpts\ punten te behalen.\par
+  Voor elk vraagnummer staat hoeveel punten met een goed antwoord behaald
+  kunnen worden.\\
+  
+  Als bij een vraag een verklaring, uitleg of berekening vereist is, worden aan het antwoord meestal geen punten toegekend als deze verklaring, uitleg of berekening ontbreekt.\\
+   
+  Geef niet meer antwoorden (redenen, voorbeelden e.d.) dan er worden gevraagd. Als er bijvoorbeeld twee redenen worden gevraagd en je geeft meer dan twee redenen, dan worden alleen de eerste twee in de beoordeling meegeteld.
+  
 } % End of the title page text
 
 %%% Put text here for the simple title on the first page
 % Use \totqstns and \totpts to reference total questions and total points resp.
 \simpletitletext{
-\textit{Dit examen bestaat uit \totqstns\ vragen, waarvoor maximaal \totpts\ punten zijn te behalen.\\
+\textit{Deze toets bestaat uit \totqstns\ vragen (\totpts\ punten).\\
 Veel succes en plezier!\\
   }
 }
 
-
-% Make title pages if instructed to
-\ifmakefulltitlepage
-  \maketitlepage % inserts a \newpage
-\else
-  \ifmakesimpletitlepage
-    \makesimpletitleonfirstpage % does not insert a \newpage
-  \fi
-\fi
-
-
-\pagestyle{mainpagestyle} % Apply the main style
 %%%%% Formula Page (?)
 
 \formulapagetext{% Put text here for the formula page(s)
+
+%\textsc{Overzicht formules}\\
 
 \textbf{Differenti\"eren}\\[0.5\baselineskip]\noindent
 \begin{tabular}{lll}
@@ -148,30 +146,46 @@ productregel & $p(x) = f(x)\cdot g(x)$ & $p'(x) = f'(x)\cdot g(x) + f(x)\cdot g'
 quoti\"entregel & $q(x) = \frac{f(x)}{g(x)}$ & $q'(x) = \frac{f'(x)\cdot g(x) - f(x)\cdot g'(x)}{(g(x))^2}$ \\
 kettingregel & $k(x) = f(g(x))$ & $k'(x) = f'(g(x))\cdot g'(x)$ of  $\deriv{k}{x} = \deriv{f}{g}\cdot\deriv{g}{x}$ \\
 \hline
-\end{tabular}
+\end{tabular}\newline
 
+\textbf{Logaritmen}\\[0.5\baselineskip]\noindent
+\begin{tabular}{ll}
+\hline\hline
+Regel & Voorwaarde \\\hline
+$\lognl[g] a + \lognl[g] b = \lognl[g] ab$ & $g>0,\ g\neq1,\ a>0,\ b>0$\\
+$\lognl[g] a - \lognl[g] b = \lognl[g] \frac{a}{b}$ & $g>0,\ g\neq1,\ a>0,\ b>0$\\
+$\lognl[g] a^p = p\cdot\lognl[g] a$ & $g>0,\ g\neq1,\ a>0$\\
+$\lognl[g] a = \frac{\lognl[p] a}{\lognl[p] g}$ & $g>0,\ g\neq1,\ a>0,\ p>0,\ p\neq 1$\\
+
+\hline
+\end{tabular}
 
 } % End of formula page text
 
-% Make the formula page if instructed to
-\ifmaketheformulapage
-  \makeformulapage
-\fi
-
-%%%%% Begin With the Body
-\makeatletter\ifOptExc@firstexconnewpage
-  \setmainpagegeometry
-\fi\makeatother
-
-%%% New exercise
-\newexercise{Lorem} \label{exc:lorem}
-
+%%%%% HACKZ
+\setlength{\exerciseskip}{2\baselineskip} % for use in \interexercisespace
+\def\arraystretch{1}%  1 is the default, change whatever you need % Table row sep
+  
+%%%%% Examples
+% Wrapfigure
 %\begin{wrapfigure}[]{r}{0.3\textwidth} % Use for illustrations, not figures
 %\begin{wrapfigure}[<number of lines>]{<capital for float>}{0.5\textwidth}
 %\centering
 %    \includegraphics[width=0.25\textwidth]{escher.jpg}
 % \caption{}
 %\end{wrapfigure}
+
+% Answer
+% \answer[<before>][<after>]{answer}
+% is only shown when showanswers=True. <before> and <after> are only printed inline
+  
+%%%%% %%%%% BEGIN document
+\begin{document}
+
+
+
+%%% New exercise
+\newexercise{Lorem} \label{exc:lorem}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. $\lognl[4] 4 + \lognl(5x+3)$
@@ -221,17 +235,30 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 \newquestion[1]{quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}\label{q:vraagvbbbbb}%
 \newsubquestion[2]{No sabía, de tristezas, ni de lágrimas, Ni nada, que me hicieran llorar,}
+\answer{\begin{bolletjes}
+  \bolletje Que a besos yo te levante al rayar el día
+\end{bolletjes}}
 
 \newsubquestion[2]{Yo sabía de cariño, de ternura. Porque a mí desde pequeño Eso me enseño mamá,}
+\answer{\begin{bolletjes}
+  \bolletje Y que el idilio perdure siempre al llegar la noche
+\end{bolletjes}}
 
 \newsubquestion[2]{eso me enseño mamá Eso y muchas cosas más.}
+\answer{\begin{bolletjes}
+  \bolletje Y cuando venga la aurora llena de goce
+\end{bolletjes}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 \newsubquestion[2]{Yo jamás sufrí, yo jamás lloré. Yo era muy feliz, yo vivía muy bien\newline}
+\answer[\undonewline]{\begin{bolletjes}
+  \bolletje Se fundan en una sola tu alma y la mía
+\end{bolletjes}}
 
 \newquestion[3]{quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.} \label{q:vraagvbvbvb}
 
+\clearpage 
 
 %%% New exercise
 \newexercise{Lorem 2} \label{exc:second}
@@ -246,6 +273,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
 \newquestion[2]{\label{q:vraagdrie}question question question\newline}  
+\answer[\undonewline]{\begin{bolletjes}
+  \bolletje Ceterum censeo Carthaginem esse delendam
+  \bolletje Heldhaftig, vastberaden en barmhartig
+\end{bolletjes}}
 
 Excepteur sint occaecat cupidatat non proident\footnote{Nou ja zeg een footnote}, sunt in culpa qui officia deserunt mollit anim id est laborum. In equation~\ref{eq:equation} and~\ref{eq:equationtwo}.
 
@@ -269,6 +300,12 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 \newquestion[2]{\label{q:vraagvijf}question question question\newline}  
 
+\answer[\undonewline]{\begin{bolletjes}
+  \bolletje Ceterum censeo Carthaginem esse delendam
+  \bolletje Heldhaftig, vastberaden en barmhartig
+\end{bolletjes}
+Opmerking: \textit{Abundat dulcibus vitiis}}
+
 \newquestion[2]{question question question question question question question question question question question question question question question question question question question question question\newline}  \label{q:vraagzes}
 
 \newpage
@@ -285,6 +322,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 \newsubquestion[2]{$y=x^2-3$}
 \newsubquestion[2]{$y=x^2-3$}
 \end{multicols}
+
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
@@ -311,13 +349,12 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 \refquestion{q:vraagvijf} en \refquestion{q:vraagzes}\newline
 \includegraphics[angle=90,width=0.8\textwidth]{random_graph.png} % Sidenote: The rotating package introduces a sidewaysfigure
 
+%\vfill
+%\begin{center} \textbf{\textsc{VERGEET NIET DEZE UITWERKBIJLAGE IN TE LEVEREN}} \end{center}
+
 } % End worksheet content
 
-% Make the worksheet pages if instructed to
-\ifmakeworksheetpages
-  \makeworksheets
-\fi
 
-
-
+%%% END Document
+% It makes the worksheets here
 \end{document}

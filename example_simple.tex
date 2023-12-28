@@ -159,12 +159,8 @@ $\lognl[g] a = \frac{\lognl[p] a}{\lognl[p] g}$ & $g>0,\ g\neq1,\ a>0,\ p>0,\ p\
 \setlength{\exerciseskip}{2\baselineskip} % for use in \interexercisespace
 \def\arraystretch{1}%  1 is the default, change whatever you need % Table row sep
   
-%%%%% %%%%% BEGIN document
-\begin{document}
-
-%%% New exercise
-%\newexercise{Lorem} \label{exc:lorem}
-
+%%%%% Examples
+% Wrapfigure
 %\begin{wrapfigure}[]{r}{0.3\textwidth} % Use for illustrations, not figures
 %\begin{wrapfigure}[<number of lines>]{<capital for float>}{0.5\textwidth}
 %\centering
@@ -172,19 +168,47 @@ $\lognl[g] a = \frac{\lognl[p] a}{\lognl[p] g}$ & $g>0,\ g\neq1,\ a>0,\ p>0,\ p\
 % \caption{}
 %\end{wrapfigure}
 
+% Answer
+% \answer[<before>][<after>]{answer}
+% is only shown when showanswers=True. <before> and <after> are only printed inline
+
+%%%%% %%%%% BEGIN document
+\begin{document}
+
+%%% New exercise
+%\newexercise{Lorem} \label{exc:lorem}
+
+
 
 %\interexercisespace
 
 
 \newquestion[3]{\label{q:vraagX}quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ea commodo consequat.} 
 \newsubquestion[2]{No sabía, de tristezas, ni de lágrimas, Ni nada, que me hicieran llorar,}
+\answer{\begin{bolletjes}
+  \bolletje Que a besos yo te levante al rayar el día
+\end{bolletjes}}
 \newsubquestion[2]{Yo sabía de cariño, de ternura. Porque a mí desde pequeño Eso me enseño mamá,}
+\answer{\begin{bolletjes}
+  \bolletje Y que el idilio perdure siempre al llegar la noche
+\end{bolletjes}}
 \newsubquestion[2]{eso me enseño mamá Eso y muchas cosas más.}
+\answer{\begin{bolletjes}
+  \bolletje Y cuando venga la aurora llena de goce
+\end{bolletjes}}
 \newsubquestion[2]{Yo jamás sufrí, yo jamás lloré. Yo era muy feliz, yo vivía muy bien\newline}
+\answer[\undonewline]{\begin{bolletjes}
+  \bolletje Se fundan en una sola tu alma y la mía
+\end{bolletjes}}
 
 \showpoints
 \newquestion[3]{\label{q:vraagXX}quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. En quaestio~\ref{q:vraagXXX} habes responsum.\newline} 
 
+\answer[\undonewline]{\begin{bolletjes}
+  \bolletje Ceterum censeo Carthaginem esse delendam
+  \bolletje Heldhaftig, vastberaden en barmhartig
+\end{bolletjes}
+Opmerking: \textit{Abundat dulcibus vitiis}}
 
 \newquestion[3]{\label{q:vraagXXX}quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ea commodo consequat.}\vspace{-\lineheight}%\vspace{-0.83333\baselineskip}  
 \begin{multicols}{2}%
@@ -220,8 +244,8 @@ $\lognl[g] a = \frac{\lognl[p] a}{\lognl[p] g}$ & $g>0,\ g\neq1,\ a>0,\ p>0,\ p\
 \refquestion{q:vraagvijf} en \refquestion{q:vraagzes}\newline
 \includegraphics[angle=90,width=0.8\textwidth]{random_graph.png} % Sidenote: The rotating package introduces a sidewaysfigure
 
-\vfill
-\begin{center} \textbf{\textsc{VERGEET NIET DEZE UITWERKBIJLAGE IN TE LEVEREN}} \end{center}
+%\vfill
+%\begin{center} \textbf{\textsc{VERGEET NIET DEZE UITWERKBIJLAGE IN TE LEVEREN}} \end{center}
 
 } % End worksheet content
 
