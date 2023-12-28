@@ -1,6 +1,6 @@
 %%%%% %%%%% %%%%% Identification
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{examstylo}[2022/10/10 Exam Style]
+\ProvidesPackage{examstylo}[2023/12/28 Exam Style]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,6 +33,8 @@
 \RequirePackage[dutch]{babel}
 \RequirePackage{keyval}
 
+\RequirePackage{xparse}
+
 \RequirePackage{tcolorbox}
 \RequirePackage{enumitem}
 
@@ -47,7 +49,9 @@
 \RequirePackage{amssymb}
 \RequirePackage{bm}
 \RequirePackage{eurosym}
-%\RequirePackage{cancel}
+\RequirePackage{cancel}
+
+\usepackage{anyfontsize} % for differentfontsizes
 
 \RequirePackage{icomma} % comma decimal point
 
@@ -57,6 +61,10 @@
 
 
 \RequirePackage{marginnote}
+
+\RequirePackage{csquotes} % for quotes
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% %%%%% %%%%% Options. 
@@ -119,31 +127,34 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%
 % Some options
-\def\istrue{True}
+% used inside options to test \ifx ... \istrue
+\def\istrue{True} 
+\def\isfalse{False} 
 
-\newif\ifusepointsquestions
-\newif\ifusepointssubquestions
-\newcommand{\UsePointsFromQuestions}{\usepointsquestionstrue}
-\newcommand{\UsePointsFromSubQuestions}{\usepointssubquestionstrue}
 
-\newif\ifmakeworksheetpages
-\newcommand{\MakeTheWorksheetPages}{\makeworksheetpagestrue}
+\newcommand{\MakeTheWorksheetPages}{\def\makeworksheetpages{Yes}}
+\newcommand{\ShowTitleOnTheWorksheet}{\def\showtitleonworksheet{Yes}}
 
-\newif\ifmakefulltitlepage
-\newif\ifmakesimpletitlepage
-\newcommand{\MakeTheFullTitlePage}{\makefulltitlepagetrue}
-\newcommand{\MakeTheSimpleTitlePage}{\makesimpletitlepagetrue}
+\newcommand{\MakeTheFullTitlePage}{\def\makefulltitlepage{Yes}}
+\newcommand{\MakeTheSimpleTitlePage}{\def\makesimpletitlepage{Yes}}
 
-\newif\ifmaketheformulapage
-\newcommand{\MakeTheFormulaPage}{\maketheformulapagetrue}
+\newcommand{\MakeTheFormulaPage}{\def\maketheformulapage{Yes}}
 
-\newcommand{\UseArialFont}{
+\newcommand{\UseArialFont}{%
 \usepackage{helvet}% Secretly this is Helvetica
 \renewcommand{\familydefault}{\sfdefault}
 \linespread{1.2} % spacing between lines (better 1.2 for Arial)
+% Different math font
+\usepackage{mathptmx} % times new roman math? idk it looks like CITO
+% equalize math sizes to text size %\DeclareMathSizes {t-size} {mt-size} {s-size} {ss-size} Basically, we instruct the use of a <mt-size> as the math text size, <s-size> as the script size and <ss-size> the scriptscript size to be used in math, when <t-size> is the current text size. 
+\DeclareMathSizes{8}{9.25}{6}{5}%{8}{8}{6}{5}
+\DeclareMathSizes{9}{10.5}{7}{5}%{9}{9}{7}{5}
+\DeclareMathSizes{10}{11.5}{7.4}{6}%{10}{10}{7.4}{6}
+\DeclareMathSizes{12}{13}{9}{7}%{12}{12}{9}{7}
+\DeclareMathSizes{14.4}{15.8}{10.95}{8}%{14.4}{14.4}{10.95}{8}
 }
 
-\def\tmpfunc#1{#1}
+\def\tmpfunc#1{#1} % Used inside options to test \ifx
 
 %% Footer options
 \newif\ifOptFoot@showleft
@@ -153,30 +164,50 @@
 \define@key{footeropt}{showleft}{\def\tmp{#1}\ifx\tmp\istrue\OptFoot@showlefttrue\else\OptFoot@showleftfalse\fi}
 \define@key{footeropt}{showcenter}{\def\tmp{#1}\ifx\tmp\istrue\OptFoot@showcentertrue\else\OptFoot@showcenterfalse\fi}
 \define@key{footeropt}{showright}{\def\tmp{#1}\ifx\tmp\istrue\OptFoot@showrighttrue\else\OptFoot@showrightfalse\fi}
+
 \setkeys{footeropt}{showleft=True,showcenter=True,showright=True}% defaults
 \newcommand{\SetFooterOptions}[2][]{%
   \setkeys{footeropt}{#1}% Set new keys
 }
-
 %% Exercise options
 \newif\ifOptExc@excnewpage
 \newif\ifOptExc@firstexconnewpage
-\newif\ifOptExc@excResetquest
 \newlength{\firstexercisevskip}\setlength{\firstexercisevskip}{1\baselineskip}
+\def\OptExc@QuestionStartingNumberMinOne{0}
 
 \define@key{excopt}{PutExerciseOnNewPage}{\def\tmp{#1}\ifx\tmp\istrue\OptExc@excnewpagetrue\else\OptExc@excnewpagefalse\fi}
 \define@key{excopt}{PutFirstExerciseOnNewPage}{\def\tmp{#1}\ifx\tmp\istrue\OptExc@firstexconnewpagetrue\else\OptExc@firstexconnewpagefalse\fi}
 \define@key{excopt}{firstexercisevskip}{\setlength{\firstexercisevskip}{#1}}
-\define@key{excopt}{ExerciseResetQuestionCount}{\def\tmp{#1}\ifx\tmp\istrue\OptExc@excResetquesttrue\else\OptExc@excResetquestfalse\fi}
-\setkeys{excopt}{PutExerciseOnNewPage=True,PutFirstExerciseOnNewPage=True,firstexercisevskip=\baselineskip,ExerciseResetQuestionCount=False}% defaults
+\define@key{excopt}{QuestionStartingNumber}{\def\OptExc@QuestionStartingNumberMinOne{\the\numexpr#1-1\relax}}
+
+\setkeys{excopt}{PutExerciseOnNewPage=True,PutFirstExerciseOnNewPage=True,firstexercisevskip=\baselineskip,QuestionStartingNumber=1}% defaults
 \newcommand{\SetExerciseOptions}[2][]{%
   \setkeys{excopt}{#1}% Set new keys
 }
 
+
+%% Pages options
+\newif\ifOptPages@fulltitlepage
+\newif\ifOptPages@simpletitlepage
+\newif\ifOptPages@formulapage
+\newif\ifOptPages@worksheetpages
+
+\def\tmpstring@simple{Simple}
+\def\tmpstring@full{Full}
+
+\define@key{pageopt}{TitlePage}{\def\tmp{#1}\ifx\tmp\tmpstring@full\OptPages@fulltitlepagetrue\OptPages@simpletitlepagefalse\else\OptPages@fulltitlepagefalse\ifx\tmp\tmpstring@simple\OptPages@simpletitlepagetrue\else\OptPages@simpletitlepagefalse\fi\fi}
+\define@key{pageopt}{FormulaPage}{\def\tmp{#1}\ifx\tmp\istrue\OptPages@formulapagetrue\else\OptPages@formulapagefalse\fi}
+\define@key{pageopt}{WorksheetPages}{\def\tmp{#1}\ifx\tmp\istrue\OptPages@worksheetpagestrue\else\OptPages@worksheetpagesfalse\fi}
+
+\setkeys{pageopt}{TitlePage=simple,FormulaPage=False,WorksheetPages=False}% defaults
+\newcommand{\SetPagesOptions}[2][]{%
+  \setkeys{pageopt}{#1}% Set new keys
+}
 %% Worksheet options
 \newif\ifOptWorksh@showtitle
 
 \define@key{wsopt}{ShowTitle}{\def\tmp{#1}\ifx\tmp\istrue\OptWorksh@showtitletrue\else\OptWorksh@showtitlefalse\fi}
+
 \setkeys{wsopt}{ShowTitle=True}% defaults
 \newcommand{\SetWorksheetOptions}[2][]{%
   \setkeys{wsopt}{#1}% Set new keys
@@ -184,10 +215,39 @@
 %% Simple titlepage options
 \def\OptSimpTit@thestyle{Default}
 
-\define@key{sitiopt}{thestyle}{\def\OptSimpTit@thestyle{#1}}
-\setkeys{sitiopt}{thestyle=Default}% defaults
+\define@key{sitiopt}{theStyle}{\def\OptSimpTit@thestyle{#1}}
+
+\setkeys{sitiopt}{theStyle=Default}% defaults
 \newcommand{\SetSimpleTitleOptions}[2][]{%
   \setkeys{sitiopt}{#1}% Set new keys
+}
+%% Point options
+\def\OptPoints@which{questions}
+\newif\ifOptPoints@usepointsfromquestions
+\newif\ifOptPoints@usepointsfromsubquestions
+
+\def\tmpstring@questions{questions}
+\def\tmpstring@subquestions{subquestions}
+
+\define@key{pointopt}{which}{\def\tmp{#1}\ifx\tmp\tmpstring@questions\OptPoints@usepointsfromquestionstrue\else\OptPoints@usepointsfromquestionsfalse\fi \ifx\tmp\tmpstring@subquestions\OptPoints@usepointsfromsubquestionstrue\else\OptPoints@usepointsfromsubquestionsfalse \fi}
+
+\setkeys{pointopt}{which=questions}% defaults
+\newcommand{\SetPointOptions}[2][]{%
+  \setkeys{pointopt}{#1}% Set new keys
+}
+
+%% Answer options
+\newif\ifOptAnswers@showanswers
+\newif\ifOptAnswers@showanswersinline
+\newif\ifOptAnswers@showanswersatend
+
+\define@key{answersopt}{ShowAnswers}{\def\tmp{#1}\ifx\tmp\istrue\OptAnswers@showanswerstrue\else\OptAnswers@showanswersfalse\fi}
+\define@key{answersopt}{ShowAnswersInline}{\def\tmp{#1}\ifx\tmp\istrue\OptAnswers@showanswersinlinetrue\else\OptAnswers@showanswersinlinefalse\fi}
+\define@key{answersopt}{ShowAnswersAtEnd}{\def\tmp{#1}\ifx\tmp\istrue\OptAnswers@showanswersatendtrue\else\OptAnswers@showanswersatendfalse\fi}
+
+\setkeys{answersopt}{ShowAnswers=True,ShowAnswersInline=True,ShowAnswersAtEnd=True}% defaults
+\newcommand{\SetAnswerOptions}[2][]{%
+  \setkeys{answersopt}{#1}% Set new keys
 }
 
 
@@ -207,7 +267,42 @@
 \NewDocumentCommand{\lognl}{o}{%
   \IfNoValueTF{#1}{}{{}^{\scalebox{0.5}{#1}}\!}\log}%
 \def\deriv#1#2{\ensuremath{\frac{\mrm{d}#1}{\mrm{d}#2}}}
+\newcommand{\eulere}{\ensuremath{\mrm{e}}}
 
+\renewcommand{\parallel}{\mathrel{\mathpalette\new@parallel\relax}}%parallel
+\newcommand{\new@parallel}[2]{%
+  \begingroup
+  \sbox\z@{$#1T$}% get the height of an uppercase letter
+  \resizebox{!}{\ht\z@}{\raisebox{\depth}{$\m@th#1/\mkern-5mu/$}}%
+  \endgroup
+}
+
+% X with Bar
+\newcommand*{\Xbar}{}%
+\DeclareRobustCommand*{\Xbar}{%
+  \mathpalette\@Xbar{}%
+}
+\newcommand*{\@Xbar}[2]{%
+  % #1: math style
+  % #2: unused (empty)
+  \sbox0{$#1\mathrm{X}\m@th$}%
+  \sbox2{$#1X\m@th$}%
+  \rlap{%
+    \hbox to\wd2{%
+      \hfill
+      $\overline{%
+        \vrule width 0pt height\ht0 %
+        \kern\wd0 %
+      }$%
+    }%
+  }%
+  \copy2 %
+}
+
+\newcommand\hateq{\ensuremath{ \hat{=} }} % hat with ^
+\newcommand\unit[1]{\ensuremath{\,\mrm{#1}}} % For units
+\newcommand\ut[1]{\unit{#1}} % alias unit
+\def \undonewline {\vspace{-\baselineskip}}
 
 \renewcommand\comment[1]{} % COMMENTS
 
@@ -219,7 +314,8 @@
 \newcommand{\orange}[1]{{\color{orange} #1}}
 \definecolor{excrulegray}{gray}{0.75} 
 \newcommand{\excrulecolor}[1]{{\color{excrulegray} #1}}
-
+\definecolor{royalpurple}{RGB}{112,48,160} 
+\newcommand{\royalpurple}[1]{{\color{royalpurple} #1}}
 
 
 %%%%
@@ -228,15 +324,16 @@
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0pt}
 
-\def\arraystretch{1.5}%  1 is the default, change whatever you need % Table row sep
-
+\newlength{\exerciseskip} % for use in \interexercisespace
+\setlength{\exerciseskip}{3\baselineskip} % for use in \interexercisespace
+\newcommand{\interexercisespace}{\vspace{\exerciseskip}}
 
 % Question format
 \newcommand{\exc}[1]{\textbf{#1}}
 \newcommand{\pts}[1]{{\footnotesize #1p}}
 
 % subquestions
-%\def\subqmarginwidth{\ifusepointssubquestions2.5em\else1.25em\fi} % subquestion margin
+%\def\subqmarginwidth{\ifOptPoints@usepointsfromsubquestions2.5em\else1.25em\fi} % subquestion margin
 %\setlength{\columnsep}{0.5em} % for paracol as well as multicol package..
 
 % Fix lineheight thing (is fake)
@@ -319,7 +416,7 @@
 \fancyhead{} % no header..
 \renewcommand{\headrulewidth}{0pt} % fuck off with the hdr
 \fancyfoot{}
-\fancyfoot[L]{\footerlefttxt}
+\fancyfoot[L]{\footerlefttxt Uitwerkbijlage}
 \fancyfoot[C]{\footercentertxt[ws]}
 \fancyfoot[R]{\footerrighttxt}
 }
@@ -328,7 +425,7 @@
 \fancyhead{} % no header..
 \renewcommand{\headrulewidth}{0pt} % fuck off with the hdr
 \fancyfoot{}
-\fancyfoot[L]{\footerlefttxt}
+\fancyfoot[L]{\footerlefttxt Uitwerkbijlage}
 \fancyfoot[C]{\footercentertxt[ws]}
 \fancyfoot[R]{\footerrighttxt[last]}
 }
@@ -406,33 +503,20 @@
 \providecommand\totqstns{} 
 \providecommand\totpts{}
 
-\AtEndDocument{%
-  \addtocounter{totquestions}{\value{question}}%
-  \addtocounter{totexercises}{\value{exercise}}%
-  %\addtocounter{totpoints}{\value{?}}%
-  \immediate\write\@mainaux{%
-    \string\gdef\string\totexcs{\number\value{totexercises}}%
-    \string\gdef\string\totqstns{\number\value{totquestions}}%
-    \string\gdef\string\totpts{\number\value{totpoints}}%
-  }%
-}
-
 
 % New exercise/question commands
 \newcommand{\newexercise}[1]{
 \refstepcounter{exercise}
+\ifAnswers@makingAnswerPage\else\listadd{\Answers@List}{\expandafter{\newexercise{#1}}}\fi
 \NR@gettitle{#1}% for the nameref package, to be able to refer to the exc title
 \WFfill\WFclear\FloatBarrier
 %\ifdefined\OptExc@excnewpage\newpage\else\vspace{3\baselineskip}\fi % new page if wanted
 \ifnum\ifnum\value{exercise}=1 \ifOptExc@firstexconnewpage 1\else 0\fi \else\ifOptExc@excnewpage 1\else 0\fi\fi
-  =1 %
-  \newpage
-\else
-  \vspace{\firstexercisevskip}
-\fi
-\ifOptExc@excResetquest%Reset question counter if wanted
-  \setcounter{question}{0}
-\fi
+   =1 %
+   \newpage
+ \else
+   \vspace{\firstexercisevskip}
+ \fi
 \hspace*{\dimexpr-0.5cm-1em\relax}{\large\bf #1 }\vspace{-0.5\baselineskip}
 \newline \hspace*{-1.7cm}\excrulecolor{\rule{\dimexpr\textwidth+1.7cm\relax}{1.5mm}}
 \newline
@@ -441,28 +525,38 @@
 
 \newcommand{\newquestion}[2][]{% Those convoluted ifstatements are: IF (pionts at subquestion and  asked for exception: DO) or (point ant question: DO)
 \refstepcounter{question}
-\ifusepointssubquestions\ifdoshowpoints\addtocounter{totpoints}{#1}\fi\else\ifusepointsquestions\addtocounter{totpoints}{#1}\fi\fi% Add points if asked
-\marginnote{\ifstrempty{#1}{}{\ifusepointssubquestions\ifdoshowpoints\pts{#1}\fi\else\ifusepointsquestions\pts{#1}\fi\fi}\hfill\exc{\thequestion}}[0cm]#2%
+\ifAnswers@makingAnswerPage\else
+  %\ifdoshowpoints\listadd{\Answers@List}{\expandafter{\showpoints}}\fi
+  \listadd{\Answers@List}{{\expandafter\Answers@isEmptyQuestiontrue}}
+  \listadd{\Answers@List}{\expandafter{\newquestion[#1]{}}}
+\fi
+\ifOptPoints@usepointsfromsubquestions\ifdoshowpoints\addtocounter{totpoints}{#1}\fi\else\ifOptPoints@usepointsfromquestions\addtocounter{totpoints}{#1}\fi\fi% Add points if asked
+\marginnote{\ifstrempty{#1}{}{\ifOptPoints@usepointsfromsubquestions\ifdoshowpoints\pts{#1}\fi\else\ifOptPoints@usepointsfromquestions\pts{#1}\fi\fi}\hfill\exc{\thequestion}}[0cm]#2%
 \ifdoshowpoints\showpoints\fi%retoggle the toggle
 }
 
-%\def\subqmarginwidth{\ifusepointssubquestions2.5em\else1.25em\fi} % subquestion margin
-\def\subqmarginwidth{\ifusepointssubquestions2.25em\else1em\fi} % subquestion margin
+%\def\subqmarginwidth{\ifOptPoints@usepointsfromsubquestions2.5em\else1.25em\fi} % subquestion margin
+\def\subqmarginwidth{\ifOptPoints@usepointsfromsubquestions2.25em\else1em\fi} % subquestion margin
 \setlength{\columnsep}{0.5em} % for paracol as well as multicol package..
 
 \newcommand{\newsubquestion}[2][]{%
 \setcolumnwidth{\subqmarginwidth,\fill}%,\dimexpr\textwidth-\subqmarginwidth\relax}[0,0]%\columnratio{0.08}%
 \refstepcounter{subquestion}
-\ifusepointssubquestions\addtocounter{totpoints}{#1}\fi
+\ifAnswers@makingAnswerPage\else
+  \listadd{\Answers@List}{{\expandafter\Answers@isEmptyQuestionfalse}}
+  \listadd{\Answers@List}{\expandafter{\newsubquestion[#1]{}}}
+\fi
+\ifOptPoints@usepointsfromsubquestions\addtocounter{totpoints}{#1}\fi
 \begin{paracol}{2}
-%\ifstrempty{#1}{}{\ifusepointssubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}%
+%\ifstrempty{#1}{}{\ifOptPoints@usepointsfromsubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}%
 \parbox[t]{\dimexpr\subqmarginwidth\relax}{%
-\ifstrempty{#1}{}{\ifusepointssubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}}%
+\ifstrempty{#1}{}{\ifOptPoints@usepointsfromsubquestions\pts{#1}~\hfill\fi}\exc{\thesubquestion}}%
 \switchcolumn%
 #2%
 \end{paracol}%
 }
 
+%% Show points of question even if usepointsfromsubquestions
 \newif\ifdoshowpoints
 \newcommand{\showpoints}{%Toggle the boolean
 \ifdoshowpoints
@@ -473,6 +567,83 @@
 }
 
 
+
+%%%%% Answer 
+\NewDocumentCommand{\answer}{O{} O{} m}{%
+%\listadd{\Answers@List}{{\expandafter\Answers@isEmptyQuestionfalse}}
+%\listadd{\Answers@List}{#3}
+{\royalpurple{\ifOptAnswers@showanswers\ifOptAnswers@showanswersinline\ifstrempty{#1}{}{#1}#3\fi\fi\ifstrempty{#2}{}{#2}}}%
+}
+
+\NewDocumentCommand{\noanswer}{O{} O{} m}{%
+%\listadd{\Answers@List}{{\expandafter\Answers@isEmptyQuestionfalse}}
+%\listadd{\Answers@List}{#3}
+{\royalpurple{\ifOptAnswers@showanswers\ifOptAnswers@showanswersinline\fi\else\ifstrempty{#1}{}{#1}#3\fi\ifstrempty{#2}{}{#2}}}%
+}
+
+
+\NewDocumentCommand{\replaceanswer}{O{} O{} m m}{%
+%\listadd{\Answers@List}{{\expandafter\Answers@isEmptyQuestionfalse}}
+%\listadd{\Answers@List}{#3}
+{\royalpurple{\ifOptAnswers@showanswers\ifOptAnswers@showanswersinline\ifstrempty{#1}{}{#1}#3\fi\else\defaultcolor{#4}\fi\ifstrempty{#2}{}{#2}}}%
+}
+
+\newenvironment{bolletjes}
+{\begin{list}{$\bullet$}{
+\topsep=0pt
+\leftmargin=6mm
+\labelwidth=3mm
+\labelsep=3mm
+\listparindent=0mm
+\itemsep=0pt
+\parsep=0pt
+}}{\end{list}}
+
+%\newcommand{\bolletje}[2][1]{\item #2\ifstrempty{#1}{}{\hfill #1}} % DOES not work
+\let\bolletje\item
+
+\newcommand{\Answers@List}{}
+
+\newif\ifAnswers@isEmptyQuestion
+\newif\ifAnswers@makingAnswerPage
+
+%%% Answer Pages
+\newcommand{\doOneAnswer}[1]{%
+\ifAnswers@isEmptyQuestion
+%EMPTY
+\ \newline
+\else
+%NO EMPTY
+\fi
+#1
+\ifAnswers@isEmptyQuestion
+%EMPTY
+ % \newline
+\else
+%NO EMPTY
+\fi
+}
+
+\newcommand{\makeanswerpages}{
+% Reset some
+\newpage
+\setcounter{page}{1}
+\pagestyle{mainpagestyle}
+  \setmainpagegeometry
+
+\setcounter{exercise}{0} % Reset exercise counter
+\setcounter{question}{\OptExc@QuestionStartingNumberMinOne} % Reset exercise counter
+\setcounter{subquestion}{0} % Reset exercise counter
+
+\Answers@makingAnswerPagetrue
+% Go loop  
+\forlistloop{\doOneAnswer}{\Answers@List}%
+
+}
+
+%%%%%
+
+
 \newcommand{\insertemptypage}{
 \newpage
 \ \vfill
@@ -481,21 +652,71 @@
 \newpage
 }
 
-\newcommand{\refquestion}[1]{ % Mainly for worksheets, reference to a question
+\newcommand{\refquestion}[1]{% Mainly for worksheets, reference to a question
 %\newline
-\exc{\ref{#1}}
+\exc{\ref{#1}}%
 %\newline
 }
 
 % call this at the START of the document
 \AtBeginDocument{% Declarations at the start of the document
 \setcounter{exercise}{0} % Reset exercise counter
+\setcounter{question}{\OptExc@QuestionStartingNumberMinOne} % Reset exercise counter
+\setcounter{subquestion}{0} % Reset exercise counter
 \setnomargingeometry % first set to no margin geometry
 \pagestyle{mainpagestyle} % Apply the style, to calculate the footer width, then later we will set to the mainpage geometry, and never touch the footer width again. (its a hack)
 \ifOptExc@firstexconnewpage \else % if not
   \setmainpagegeometry
 \fi
-}
+
+% Make title pages if instructed to
+\ifOptPages@fulltitlepage
+  \maketitlepage % inserts a \newpage
+\else
+  \ifOptPages@simpletitlepage
+    \makesimpletitleonfirstpage % does not insert a \newpage
+  \fi
+\fi
+
+
+\pagestyle{mainpagestyle} % Apply the main style
+
+% Make the formula page if instructed to
+\ifOptPages@formulapage
+  \makeformulapage
+\fi
+
+\ifOptExc@firstexconnewpage
+  \setmainpagegeometry
+\fi
+}% End AtBeginDocument
+
+% Call this at the END of the document
+\AtEndDocument{
+% Make the worksheet pages if instructed to
+\ifOptPages@worksheetpages
+  \makeworksheets
+\fi
+
+%%  Save Counters Now, before we start doing other stuff (Showanswers at end)
+  \addtocounter{totquestions}{\value{question}}%
+  \addtocounter{totexercises}{\value{exercise}}%
+  %\addtocounter{totpoints}{\value{?}}%
+  \immediate\write\@mainaux{%
+    \string\gdef\string\totexcs{\number\value{totexercises}}%
+    \string\gdef\string\totqstns{\number\value{totquestions}}%
+    \string\gdef\string\totpts{\number\value{totpoints}}%
+  }%
+
+
+% Make the answer pages if instructed to
+\ifOptAnswers@showanswersatend
+    \ifOptAnswers@showanswers
+  \makeanswerpages
+    \fi
+\fi
+
+} % End AtEndDocument
 
 % call this at the LAST page!
 \newcommand{\lastpageofthetest}{
@@ -524,7 +745,7 @@
 
 % Header
 \ifOptWorksh@showtitle%
-  \ExSt@maketitlebar{\thetitle\hfill\theextratitletext}%titlebar
+  \ExSt@maketitlebar{\thetitle\ifstrempty{\theextratitletext}{}{\hfill\theextratitletext}}%titlebar
 \fi
 \begin{tcolorbox}[ % Uitwerkbijlage
                   boxrule=0.5mm, boxsep=0pt,
@@ -601,7 +822,7 @@
 \fi%
 \end{flushright}%
 \ExSt@maketitlebar{\hfill\thetitle}%
-\begin{flushright}\theextratitletext\end{flushright}
+\ifstrempty{\theextratitletext}{}{\begin{flushright}\theextratitletext\end{flushright}}
 
 \ \vspace{4\baselineskip}
 
@@ -638,7 +859,7 @@
 \hfill
 %\includegraphics[]{barlaeus_logo_almostsquare.png}
 \begin{Large}\textbf{\textsc{Barlaeus Gymnasium}}\end{Large}\vspace{-0.5\baselineskip}
-\ExSt@maketitlebar{\thetitle \hfill \theextratitletext}
+\ExSt@maketitlebar{\thetitle\ifstrempty{\theextratitletext}{}{\hfill \theextratitletext}}
 
 
 \thesimpletitletext
@@ -655,7 +876,7 @@
 \simpletitle@thedatetime
 \hfill
 \newline
-{\large\bf \thetitle} \hfill \theextratitletext\vspace{-0.5\baselineskip}
+{\large\bf \thetitle} \ifstrempty{\theextratitletext}{}{\hfill\theextratitletext}\vspace{-0.5\baselineskip}
 \newline\excrulecolor{\rule{\linewidth}{1.5mm}}%\includegraphics[]{barlaeus_logo_almostsquare.png}
 
 \thesimpletitletext

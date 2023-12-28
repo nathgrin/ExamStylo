@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  28 DEC 2023 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.12)  28 DEC 2023 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -31,7 +31,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \belowcaptionskip=\skip48
 \bibindent=\dimen139
 ) (examstylo.sty
-Package: examstylo 2022/10/10 Exam Style
+Package: examstylo 2023/12/28 Exam Style
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count193
@@ -196,6 +196,14 @@ Package babel Info: Making " an active character on input line 127.
 )) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/nl\babel-dutch.tex
 Package babel Info: Importing font and identification data for dutch
 (babel)             from babel-nl.ini. Reported on input line 11.
+) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-10-26 L3 programming layer (loader) 
+ (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count274
+\l__pdf_internal_box=\box52
+))
+Package: xparse 2022-06-22 L3 Experimental document command parser
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
 Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
@@ -203,7 +211,7 @@ Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
 \pgfutil@tempdima=\dimen149
 \pgfutil@tempdimb=\dimen150
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex)) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
-\pgfutil@abb=\box52
+\pgfutil@abb=\box53
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
@@ -228,14 +236,14 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yd=\dimen160
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count274
-\c@pgf@countb=\count275
-\c@pgf@countc=\count276
-\c@pgf@countd=\count277
+\c@pgf@counta=\count275
+\c@pgf@countb=\count276
+\c@pgf@countc=\count277
+\c@pgf@countd=\count278
 \t@pgf@toka=\toks22
 \t@pgf@tokb=\toks23
 \t@pgf@tokc=\toks24
-\pgf@sys@id@count=\count278
+\pgf@sys@id@count=\count279
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -246,8 +254,8 @@ File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 ))) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count279
-\pgfsyssoftpath@bigbuffer@items=\count280
+\pgfsyssoftpath@smallbuffer@items=\count280
+\pgfsyssoftpath@bigbuffer@items=\count281
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
@@ -270,13 +278,13 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen161
-\pgfmath@count=\count281
-\pgfmath@box=\box53
+\pgfmath@count=\count282
+\pgfmath@box=\box54
 \pgfmath@toks=\toks25
 \pgfmath@stack@operand=\toks26
 \pgfmath@stack@operation=\toks27
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex))) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count282
+\c@pgfmathroundto@lastzeros=\count283
 )) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen162
@@ -303,10 +311,10 @@ File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@start@additional=\dimen179
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box54
-\pgf@hbox=\box55
-\pgf@layerbox@main=\box56
-\pgf@picture@serial@count=\count283
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count284
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen180
@@ -327,13 +335,13 @@ File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen185
-\pgf@sys@shading@range@num=\count284
-\pgf@shadingcount=\count285
+\pgf@sys@shading@range@num=\count285
+\pgf@shadingcount=\count286
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box57
+\pgfexternal@startupbox=\box58
 )) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
@@ -344,7 +352,7 @@ File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box58
+\pgfnodeparttextbox=\box59
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
@@ -365,30 +373,30 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks30
 )
-\tcb@titlebox=\box59
-\tcb@upperbox=\box60
-\tcb@lowerbox=\box61
-\tcb@phantombox=\box62
-\c@tcbbreakpart=\count286
-\c@tcblayer=\count287
-\c@tcolorbox@number=\count288
-\tcb@temp=\box63
+\tcb@titlebox=\box60
+\tcb@upperbox=\box61
+\tcb@lowerbox=\box62
+\tcb@phantombox=\box63
+\c@tcbbreakpart=\count287
+\c@tcblayer=\count288
+\c@tcolorbox@number=\count289
 \tcb@temp=\box64
 \tcb@temp=\box65
 \tcb@temp=\box66
+\tcb@temp=\box67
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip52
 \enit@outerparindent=\dimen188
 \enit@toks=\toks31
-\enit@inbox=\box67
-\enit@count@id=\count289
-\enitdp@description=\count290
+\enit@inbox=\box68
+\enit@count@id=\count290
+\enitdp@description=\count291
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
 \wrapoverhang=\dimen189
 \WF@size=\dimen190
-\c@WF@wrappedlines=\count291
-\WF@box=\box68
+\c@WF@wrappedlines=\count292
+\WF@box=\box69
 \WF@everypar=\toks32
 Package: wrapfig 2003/01/31  v 3.6
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
@@ -404,8 +412,8 @@ Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footer
 \f@nch@O@orf=\skip61
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count292
-\cp@tempcnt=\count293
+\c@cp@cntr=\count293
+\cp@tempcnt=\count294
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip62
@@ -423,19 +431,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count294
+\inf@bad=\count295
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count295
-\leftroot@=\count296
+\uproot@=\count296
+\leftroot@=\count297
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count297
-\DOTSCASE@=\count298
+\classnum@=\count298
+\DOTSCASE@=\count299
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box69
-\strutbox@=\box70
+\Mathstrutbox@=\box70
+\strutbox@=\box71
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
@@ -443,20 +451,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen193
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count299
+\macc@depth=\count300
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count300
+\c@MaxMatrixCols=\count301
 \dotsspace@=\muskip17
-\c@parentequation=\count301
-\dspbrk@lvl=\count302
+\c@parentequation=\count302
+\dspbrk@lvl=\count303
 \tag@help=\toks34
-\row@=\count303
-\column@=\count304
-\maxfields@=\count305
+\row@=\count304
+\column@=\count305
+\maxfields@=\count306
 \andhelp@=\toks35
 \eqnshift@=\dimen194
 \alignsep@=\dimen195
@@ -490,33 +498,34 @@ Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box71
+\@eurobox=\box72
+) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/was\icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count306
-\mult@box=\box72
+\c@tracingmulticols=\count307
+\mult@box=\box73
 \multicol@leftmargin=\dimen256
-\c@unbalance=\count307
-\c@collectmore=\count308
-\doublecol@number=\count309
-\multicoltolerance=\count310
-\multicolpretolerance=\count311
+\c@unbalance=\count308
+\c@collectmore=\count309
+\doublecol@number=\count310
+\multicoltolerance=\count311
+\multicolpretolerance=\count312
 \full@width=\dimen257
 \page@free=\dimen258
 \premulticols=\dimen259
 \postmulticols=\dimen260
 \multicolsep=\skip65
 \multicolbaselineskip=\skip66
-\partial@page=\box73
-\last@line=\box74
+\partial@page=\box74
+\last@line=\box75
 \maxbalancingoverflow=\dimen261
-\mult@rightbox=\box75
-\mult@grightbox=\box76
-\mult@firstbox=\box77
-\mult@gfirstbox=\box78
-\@tempa=\box79
+\mult@rightbox=\box76
+\mult@grightbox=\box77
+\mult@firstbox=\box78
+\mult@gfirstbox=\box79
 \@tempa=\box80
 \@tempa=\box81
 \@tempa=\box82
@@ -552,27 +561,28 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box112
 \@tempa=\box113
 \@tempa=\box114
-\c@minrows=\count312
-\c@columnbadness=\count313
-\c@finalcolumnbadness=\count314
+\@tempa=\box115
+\c@minrows=\count313
+\c@columnbadness=\count314
+\c@finalcolumnbadness=\count315
 \last@try=\dimen262
 \multicolovershoot=\dimen263
 \multicolundershoot=\dimen264
-\mult@nat@firstbox=\box115
-\colbreak@box=\box116
-\mc@col@check@num=\count315
+\mult@nat@firstbox=\box116
+\colbreak@box=\box117
+\mc@col@check@num=\count316
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/paracol\paracol.sty
 Package: paracol 2018/12/31 v1.35 
-\pcol@currcol=\count316
-\pcol@nextcol=\count317
-\pcol@ncol=\count318
-\pcol@ncolleft=\count319
-\pcol@page=\count320
-\pcol@basepage=\count321
-\pcol@toppage=\count322
-\pcol@footnotebase=\count323
-\pcol@nfootnotes=\count324
-\pcol@mcid=\count325
+\pcol@currcol=\count317
+\pcol@nextcol=\count318
+\pcol@ncol=\count319
+\pcol@ncolleft=\count320
+\pcol@page=\count321
+\pcol@basepage=\count322
+\pcol@toppage=\count323
+\pcol@footnotebase=\count324
+\pcol@nfootnotes=\count325
+\pcol@mcid=\count326
 \pcol@prevdepth=\dimen265
 \pcol@colht=\dimen266
 \pcol@textfloatsep=\dimen267
@@ -580,25 +590,41 @@ Package: paracol 2018/12/31 v1.35
 \pagerim=\dimen269
 \pcol@topskip=\skip67
 \belowfootnoteskip=\skip68
-\pcol@topfnotes=\box117
-\pcol@prespan=\box118
-\pcol@rightpage=\box119
-\pcol@colorstack@saved=\box120
-\pcol@tempboxa=\box121
-\pcol@tempboxb=\box122
+\pcol@topfnotes=\box118
+\pcol@prespan=\box119
+\pcol@rightpage=\box120
+\pcol@colorstack@saved=\box121
+\pcol@tempboxa=\box122
+\pcol@tempboxb=\box123
 \pcol@colorins=\insert252
 \pcol@everyvbox=\toks38
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/marginnote\marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count326
-) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+\c@mn@abspage=\count327
+) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+\csq@reset=\count328
+\csq@gtype=\count329
+\csq@glevel=\count330
+\csq@qlevel=\count331
+\csq@maxlvl=\count332
+\csq@tshold=\count333
+\csq@ltx@everypar=\toks39
+ (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count327
-\Gm@cntv=\count328
-\c@Gm@tempcnt=\count329
+\Gm@cnth=\count334
+\Gm@cntv=\count335
+\c@Gm@tempcnt=\count336
 \Gm@bindingoffset=\dimen270
 \Gm@wd@mp=\dimen271
 \Gm@odd@mp=\dimen272
@@ -607,27 +633,64 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen275
 \Gm@layouthoffset=\dimen276
 \Gm@layoutvoffset=\dimen277
-\Gm@dimlist=\toks39
+\Gm@dimlist=\toks40
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 \firstexercisevskip=\skip69
-\lineheight=\skip70
-\c@exercise=\count330
-\c@question=\count331
-\c@subquestion=\count332
-\c@totexercises=\count333
-\c@totquestions=\count334
-\c@totpoints=\count335
-) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
+LaTeX Info: Redefining \Xbar on input line 264.
+\exerciseskip=\skip70
+\lineheight=\skip71
+\c@exercise=\count337
+\c@question=\count338
+\c@subquestion=\count339
+\c@totexercises=\count340
+\c@totquestions=\count341
+\c@totpoints=\count342
+)
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:45: Undefined control sequence.
+l.45 \UsePointsFromQuestions
+                             % < This
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 )
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:74: Package keyval Error: ExerciseResetQuestionCount undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74   ]{}
+          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:84: Package keyval Error: thestyle undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84   ]{}
+          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'dutch'.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 87.
- (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count336
-\l__pdf_internal_box=\box123
-) (example_full.aux)
+)
+No file example_full.aux.
 \openout1 = `example_full.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
@@ -648,19 +711,19 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
- (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
+\scratchcounter=\count343
 \scratchdimen=\dimen278
 \scratchbox=\box124
-\nofMPsegments=\count338
-\nofMParguments=\count339
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count340
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count346
 \MPscratchDim=\dimen279
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
-\everyMPtoPDFconversion=\toks41
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks42
 ) (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -668,7 +731,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 87.
- (example_full.out) (example_full.out)
 \@outlinefile=\write4
 \openout4 = `example_full.out'.
 
@@ -739,6 +801,47 @@ Package hyperref Info: Link coloring OFF on input line 87.
 * \@reversemargintrue
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(105.2751pt, 435.32724pt, 56.90553pt)
+* v-part:(T,H,B)=(48.36958pt, 699.93796pt, 96.7393pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=435.32724pt
+* \textheight=699.93796pt
+* \oddsidemargin=33.00511pt
+* \evensidemargin=33.00511pt
+* \topmargin=-60.9004pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=34.14322pt
+* \marginparwidth=31.2982pt
+* \marginparsep=17.07182pt
+* \columnsep=5.87494pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemargintrue
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:127: Undefined control sequence.
+l.127 \ifmakefulltitlepage
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 128--128
 
@@ -752,15 +855,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--128
 [1
 
 
+
 {C:/Users/nathg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:129: Extra \else.
+l.129 \else
+           
+I'm ignoring this; it doesn't match any \if.
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:130: Undefined control sequence.
+l.130   \ifmakesimpletitlepage
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 131.
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+
+ []
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:132: Extra \fi.
+l.132   \fi
+           
+I'm ignoring this; it doesn't match any \if.
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:133: Extra \fi.
+l.133 \fi
+         
+I'm ignoring this; it doesn't match any \if.
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:157: Undefined control sequence.
+l.157 \ifmaketheformulapage
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 158.
- (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 158.
  (C:\Users\nathg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2]
+)
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:159: Extra \fi.
+l.159 \fi
+         
+I'm ignoring this; it doesn't match any \if.
+
+[2]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -794,19 +944,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
+
+LaTeX Warning: Reference `exc:lorem' on page 3 undefined on input line 179.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 181.
 Package marginnote Info: right page because not two side mode on input line 181.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 181.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 181.
 
 Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-<random_graph.png, id=29, 451.6875pt x 301.125pt>
+<random_graph.png, id=27, 451.6875pt x 301.125pt>
 File: random_graph.png Graphic file (type png)
 <use random_graph.png>
 Package pdftex.def Info: random_graph.png  used on input line 185.
@@ -816,9 +969,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
-Package marginnote Info: Margin note 3.2 is on absolute page 3 on input line 189.
 Package marginnote Info: right page because not two side mode on input line 189.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 189.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 189.
 
 Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
@@ -827,78 +979,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 [3
 
  <./random_graph.png>] [4] [5]
-Package marginnote Info: Margin note 6.1 is on absolute page 6 on input line 210.
 Package marginnote Info: right page because not two side mode on input line 210.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 210.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 210.
 
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-Package marginnote Info: Margin note 6.2 is on absolute page 6 on input line 212.
 Package marginnote Info: right page because not two side mode on input line 212.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 212.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 212.
 
 Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
-Package marginnote Info: Margin note 6.3 is on absolute page 6 on input line 214.
 Package marginnote Info: right page because not two side mode on input line 214.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 214.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 214.
 
 Underfull \hbox (badness 10000) in paragraph at lines 218--218
 
  []
 
-Package marginnote Info: Margin note 6.4 is on absolute page 6 on input line 222.
 Package marginnote Info: right page because not two side mode on input line 222.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 222.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 222.
 
 Underfull \hbox (badness 10000) in paragraph at lines 231--231
 
  []
 
-Package marginnote Info: Margin note 6.5 is on absolute page 6 on input line 233.
 Package marginnote Info: right page because not two side mode on input line 233.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 233.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 233.
 [6]
-Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 248.
+
+LaTeX Warning: Reference `exc:lorem' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `exc:second' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `q:vraag' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `q:vraagvb' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `q:vraagvbvb' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `sq:example' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `q:vraagvbbbb' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `sq:ex' on page 7 undefined on input line 239.
+
+
+Overfull \hbox (12.51118pt too wide) in paragraph at lines 239--240
+[]\OT1/phv/m/n/12 In exer-cise [] and [], ques-tion [] or ques-tion []. Also sub-ques-tion [][] and [][]. 
+ []
+
 Package marginnote Info: right page because not two side mode on input line 248.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 248.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 248.
 
 Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
+LaTeX Warning: Reference `eq:equation' on page 7 undefined on input line 250.
+
+
+LaTeX Warning: Reference `eq:equationtwo' on page 7 undefined on input line 250.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
-Package marginnote Info: Margin note 7.2 is on absolute page 7 on input line 266.
 Package marginnote Info: right page because not two side mode on input line 266.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 266.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 266.
 
 Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-Package marginnote Info: Margin note 7.3 is on absolute page 7 on input line 270.
 Package marginnote Info: right page because not two side mode on input line 270.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 270.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 270.
 
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-Package marginnote Info: Margin note 7.4 is on absolute page 7 on input line 272.
 Package marginnote Info: right page because not two side mode on input line 272.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 272.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 272.
 [7]
-Package marginnote Info: Margin note 8.1 is on absolute page 8 on input line 278.
 Package marginnote Info: right page because not two side mode on input line 278.
-Package marginnote Info: xpos seems to be 105.2751pt on input line 278.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 278.
 
 Overfull \hbox (220.60109pt too wide) in paragraph at lines 280--280
 [][] 
@@ -928,6 +1105,15 @@ Overfull \hbox (220.60109pt too wide) in paragraph at lines 285--285
 Overfull \hbox (220.60109pt too wide) in paragraph at lines 286--286
 [][] 
  []
+
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:317: Undefined control sequence.
+l.317 \ifmakeworksheetpages
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [8]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -962,10 +1148,20 @@ Overfull \hbox (220.60109pt too wide) in paragraph at lines 286--286
 * \@reversemargintrue
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+
+
+LaTeX Warning: Reference `q:vraag' on page 1 undefined on input line 318.
+
 File: random_graph.png Graphic file (type png)
 <use random_graph.png>
 Package pdftex.def Info: random_graph.png  used on input line 318.
 (pdftex.def)             Requested size: 386.95894pt x 257.98834pt.
+
+LaTeX Warning: Reference `q:vraagvier' on page 1 undefined on input line 318.
+
+
+LaTeX Warning: Reference `q:vraagvier' on page 1 undefined on input line 318.
+
 File: random_graph.png Graphic file (type png)
 <use random_graph.png>
 Package pdftex.def Info: random_graph.png  used on input line 318.
@@ -978,31 +1174,300 @@ l.318   \makeworksheets
                         [1
 
 ]
+
+LaTeX Warning: Reference `q:vraagvijf' on page 2 undefined on input line 318.
+
+
+LaTeX Warning: Reference `q:vraagzes' on page 2 undefined on input line 318.
+
 File: random_graph.png Graphic file (type png)
 <use random_graph.png>
 Package pdftex.def Info: random_graph.png  used on input line 318.
 (pdftex.def)             Requested size: 451.68639pt x 301.12425pt.
+c:/Users/nathg/Documents/GitHub/ExamStylo/example_full.tex:319: Extra \fi.
+l.319 \fi
+         
+I'm ignoring this; it doesn't match any \if.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                     [2]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(105.2751pt, 435.32724pt, 56.90553pt)
+* v-part:(T,H,B)=(48.36958pt, 699.93796pt, 96.7393pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=435.32724pt
+* \textheight=699.93796pt
+* \oddsidemargin=33.00511pt
+* \evensidemargin=33.00511pt
+* \topmargin=-60.9004pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=34.14322pt
+* \marginparwidth=31.2982pt
+* \marginparsep=17.07182pt
+* \columnsep=5.87494pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemargintrue
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{exercise.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{question.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.5.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{question.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.6.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.6.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.6.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{subquestion.6.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{question.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{exercise.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                     [1
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{question.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+pdfTeX warning (ext4): destination with the same identifier (name{question.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                    
+Package marginnote Info: right page because not two side mode on input line 323.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 323.
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.323 \end{document}
                      [2] (example_full.aux)
-Package rerunfilecheck Info: File `example_full.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `example_full.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `example_full.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23512 strings out of 475380
- 439524 string characters out of 2776771
- 781376 words of memory out of 3000000
- 44425 multiletter control sequences out of 15000+600000
- 504123 words of font info for 99 fonts, out of 8000000 for 9000
+ 24307 strings out of 475380
+ 454117 string characters out of 2776771
+ 802489 words of memory out of 3000000
+ 45205 multiletter control sequences out of 15000+600000
+ 507750 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,13n,103p,493b,468s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on example_full.pdf (10 pages, 156450 bytes).
+ 98i,13n,103p,493b,548s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/nathg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on example_full.pdf (12 pages, 161227 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
