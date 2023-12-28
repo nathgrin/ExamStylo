@@ -40,7 +40,11 @@
   % It will force an empty line above (and below?) use \vspace{-\lineheight} to remedy
 % Watch out with a \footnote: margin notes do not move with the text to the newpage after a footnote was inserted.
 % You can use \insertemptypage to insert an empty page
-
+% Use \answer[pre][post]{answertxt} to insert answers
+% For answers, use \begin{bolletjes}\item XXX \end{bolletjes} to list steps
+%   Inside bolletjes, use \bolletje[pts]{} or \item
+%          pts defaults to 1, leave empty for no points
+%     this (\bolletje) currently does not work
 
 
 %%%%% %%%%% Options!
